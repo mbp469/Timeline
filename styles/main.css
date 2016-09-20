@@ -1,0 +1,24 @@
+.wrapper {
+  background: white;
+  width: 100%; }
+  .wrapper .all-entries {
+    position: relative;
+    width: 100%; }
+    .wrapper .all-entries .date-time {
+      position: absolute; }
+      .wrapper .all-entries .date-time .date {
+        color: lightgray;
+        float: left; }
+      .wrapper .all-entries .date-time .time {
+        color: lightblue;
+        float: left; }
+    .wrapper .all-entries .icon {
+      border-radius: 50%;
+      position: absolute;
+      width: 8%; }
+    .wrapper .all-entries .text-block {
+      width: 80%;
+      margin: auto;
+      background: lightblue; }
+
+/*# sourceMappingURL=main.css.map */

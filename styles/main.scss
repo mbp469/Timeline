@@ -1,0 +1,48 @@
+@import "partials/mixins";
+@import "partials/header";
+@import "partials/nav.scss";
+
+$background1: lightblue;
+$background2: pink;
+$textcolorwords: white;
+$textcolordate: lightgray;
+$largetext: 5em;
+$smalltext: 0.5em;
+$medtext:1em;
+
+
+.wrapper {
+  background: $textcolorwords;
+  width: 100%;
+
+    .all-entries {
+      position: relative;
+      width: 100%;
+
+        .date-time {
+          position: absolute;
+
+          .date {
+            color: $textcolordate;
+            float: left;
+          }
+          .time {
+            color: $background1;
+            float: left;
+          }
+        }
+        .icon {
+          border-radius:50%;
+          position: absolute;
+          width: 8%;
+        }
+        .text-block {
+          width: 80%;
+          margin: auto;
+          background: $background1;
+        }
+
+
+  
+    }
+}
