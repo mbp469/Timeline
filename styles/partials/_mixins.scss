@@ -1,0 +1,17 @@
+@mixin media($medtype) {
+  @if $medtype == mobile {
+    @media only screen and (max-width: 450px) {
+      @content;
+    }
+  }
+  @if $medtype == ipad {
+    @media only screen and (max-width: 750px) {
+      @content;
+    }
+  }
+  @if $medtype == desktop{
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}

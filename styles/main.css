@@ -6,7 +6,7 @@
     .wrapper .all-entries .date-time {
       float: center;
       margin: 9vw auto;
-      border-bottom: 3px solid red; }
+      border-bottom: 3px solid lightblue; }
       .wrapper .all-entries .date-time li.date {
         color: lightgray;
         display: inline-block;
