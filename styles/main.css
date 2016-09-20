@@ -2,23 +2,39 @@
   background: white;
   width: 100%; }
   .wrapper .all-entries {
-    position: relative;
-    width: 100%; }
+    position: relative; }
     .wrapper .all-entries .date-time {
-      position: absolute; }
-      .wrapper .all-entries .date-time .date {
+      float: center;
+      margin: 9vw auto;
+      border-bottom: 3px solid red; }
+      .wrapper .all-entries .date-time li.date {
         color: lightgray;
-        float: left; }
-      .wrapper .all-entries .date-time .time {
+        display: inline-block;
+        transform: translateX(140%);
+        font-size: 1.5em; }
+      .wrapper .all-entries .date-time li.time {
         color: lightblue;
-        float: left; }
-    .wrapper .all-entries .icon {
-      border-radius: 50%;
-      position: absolute;
-      width: 8%; }
+        float: center;
+        font-size: 3em;
+        transform: translateX(40%);
+        clear: both; }
     .wrapper .all-entries .text-block {
-      width: 80%;
-      margin: auto;
-      background: lightblue; }
+      position: relative;
+      width: 85%;
+      width: 78%;
+      margin: 0vw 4vw 10vw 0vw;
+      padding: 3vw 2vw 3vw 5vw;
+      float: right;
+      background: lightblue;
+      color: white; }
+      .wrapper .all-entries .text-block .icon {
+        border-radius: 50%;
+        position: absolute;
+        width: 8%;
+        top: -2px;
+        left: -39px; }
+      .wrapper .all-entries .text-block h1 {
+        font-size: 1.5em;
+        margin-bottom: 3vw; }
 
 /*# sourceMappingURL=main.css.map */

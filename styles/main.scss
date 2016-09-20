@@ -6,9 +6,9 @@ $background1: lightblue;
 $background2: pink;
 $textcolorwords: white;
 $textcolordate: lightgray;
-$largetext: 5em;
-$smalltext: 0.5em;
-$medtext:1em;
+$largetext: 3em;
+$smalltext: 1em;
+$medtext:1.5em;
 
 
 .wrapper {
@@ -17,32 +17,54 @@ $medtext:1em;
 
     .all-entries {
       position: relative;
-      width: 100%;
 
         .date-time {
-          position: absolute;
+          float: center;
+          margin: 9vw auto;
+          border-bottom: 3px solid red;
 
-          .date {
+
+          li.date {
             color: $textcolordate;
-            float: left;
+            display: inline-block;
+            transform: translateX(140%);
+            font-size: $medtext;
           }
-          .time {
+          li.time {
             color: $background1;
-            float: left;
+            float: center;
+            font-size: $largetext;
+            transform: translateX(40%);
+            clear: both;
           }
         }
-        .icon {
-          border-radius:50%;
-          position: absolute;
-          width: 8%;
-        }
+
         .text-block {
-          width: 80%;
-          margin: auto;
+          position: relative;
+          width: 85%;
+          width: 78%;
+          margin: 0vw 4vw 10vw 0vw;
+          padding: 3vw 2vw 3vw 5vw;
+          float: right;
           background: $background1;
+          color: $textcolorwords;
+
+
+
+
+          .icon {
+            border-radius:50%;
+            position: absolute;
+            width: 8%;
+            top: -2px;
+            left: -39px;
+          }
+          h1 {
+            font-size: $medtext;
+            margin-bottom: 3vw;
+          }
         }
 
-
-  
     }
+
 }
