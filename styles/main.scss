@@ -23,19 +23,34 @@ $medtext:1.5em;
           margin: 9vw auto;
           border-bottom: 3px solid $background1;
 
+          @include tablet {
+            border-bottom: none;
+
+          }
+        }
+      }
 
           li.date {
             color: $textcolordate;
             display: inline-block;
-            transform: translateX(140%);
             font-size: $medtext;
+            padding-left: 40%;
+
+            @include tablet {
+              padding-left: 0%
+            }
           }
+
+
           li.time {
             color: $background1;
-            float: center;
             font-size: $largetext;
-            transform: translateX(40%);
             clear: both;
+            padding-left: 40%;
+
+            @include tablet {
+              padding-left: 0%
+            }
           }
         }
 
@@ -49,22 +64,19 @@ $medtext:1.5em;
           background: $background1;
           color: $textcolorwords;
 
-
-
-
+          @include tablet {
+            width: 66%;
+            margin: -12vw 5vw 13vw 0vw;
+          }
           .icon {
             border-radius:50%;
             position: absolute;
             width: 8%;
             top: -2px;
-            left: -39px;
+            left: -11%;
           }
           h1 {
             font-size: $medtext;
             margin-bottom: 3vw;
           }
         }
-
-    }
-
-}

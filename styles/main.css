@@ -7,34 +7,47 @@
       float: center;
       margin: 9vw auto;
       border-bottom: 3px solid lightblue; }
-      .wrapper .all-entries .date-time li.date {
-        color: lightgray;
-        display: inline-block;
-        transform: translateX(140%);
-        font-size: 1.5em; }
-      .wrapper .all-entries .date-time li.time {
-        color: lightblue;
-        float: center;
-        font-size: 3em;
-        transform: translateX(40%);
-        clear: both; }
-    .wrapper .all-entries .text-block {
-      position: relative;
-      width: 85%;
-      width: 78%;
-      margin: 0vw 4vw 10vw 0vw;
-      padding: 3vw 2vw 3vw 5vw;
-      float: right;
-      background: lightblue;
-      color: white; }
-      .wrapper .all-entries .text-block .icon {
-        border-radius: 50%;
-        position: absolute;
-        width: 8%;
-        top: -2px;
-        left: -39px; }
-      .wrapper .all-entries .text-block h1 {
-        font-size: 1.5em;
-        margin-bottom: 3vw; }
+      @media only screen and (min-width: 620px) {
+        .wrapper .all-entries .date-time {
+          border-bottom: none; } }
+  .wrapper li.date {
+    color: lightgray;
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 40%; }
+    @media only screen and (min-width: 620px) {
+      .wrapper li.date {
+        padding-left: 0%; } }
+  .wrapper li.time {
+    color: lightblue;
+    font-size: 3em;
+    clear: both;
+    padding-left: 40%; }
+    @media only screen and (min-width: 620px) {
+      .wrapper li.time {
+        padding-left: 0%; } }
+
+.text-block {
+  position: relative;
+  width: 85%;
+  width: 78%;
+  margin: 0vw 4vw 10vw 0vw;
+  padding: 3vw 2vw 3vw 5vw;
+  float: right;
+  background: lightblue;
+  color: white; }
+  @media only screen and (min-width: 620px) {
+    .text-block {
+      width: 66%;
+      margin: -12vw 5vw 13vw 0vw; } }
+  .text-block .icon {
+    border-radius: 50%;
+    position: absolute;
+    width: 8%;
+    top: -2px;
+    left: -11%; }
+  .text-block h1 {
+    font-size: 1.5em;
+    margin-bottom: 3vw; }
 
 /*# sourceMappingURL=main.css.map */

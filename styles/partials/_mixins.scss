@@ -1,17 +1,14 @@
-@mixin media($medtype) {
-  @if $medtype == mobile {
-    @media only screen and (max-width: 450px) {
-      @content;
-    }
+$tabletPX: 620px;
+$desktopPX: 1000px;
+
+@mixin tablet() {
+  @media only screen and (min-width: #{$tabletPX}){
+    @content;
   }
-  @if $medtype == ipad {
-    @media only screen and (max-width: 750px) {
-      @content;
-    }
-  }
-  @if $medtype == desktop{
-    @media only screen and (min-width: 1200px) {
-      @content;
-    }
+}
+
+@mixin desktop() {
+  @media only screen and (min-width: #{$desktopPX}){
+    @content;
   }
 }
