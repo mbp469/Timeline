@@ -1,5 +1,6 @@
-$tabletPX: 620px;
-$desktopPX: 1000px;
+$tabletPX: 768px;
+
+$fullscreenPX: 1024px;
 
 @mixin tablet() {
   @media only screen and (min-width: #{$tabletPX}){
@@ -7,8 +8,10 @@ $desktopPX: 1000px;
   }
 }
 
-@mixin desktop() {
-  @media only screen and (min-width: #{$desktopPX}){
+
+
+@mixin fullscreen() {
+  @media only screen and (min-width: #{$fullscreenPX}) {
     @content;
   }
 }
