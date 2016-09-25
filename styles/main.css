@@ -5,89 +5,95 @@
   .wrapper .all-entries {
     display: flex;
     flex-direction: column-reverse; }
+    .wrapper .all-entries .entry:nth-of-type(odd) .text-block {
+      background: #3794E6; }
+      .wrapper .all-entries .entry:nth-of-type(odd) .text-block .triangle {
+        color: #3794E6; }
     .wrapper .all-entries .entry {
       position: relative;
       margin: 8% 1% 3% 2%; }
-      @media only screen and (min-width: 768px) {
-        .wrapper .all-entries .entry {
-          margin: 0 7% 3% 30%; } }
-      @media only screen and (min-width: 1024px) {
-        .wrapper .all-entries .entry {
-          margin: 0 2% 3% 19%; } }
-      .wrapper .all-entries .entry .side-border {
-        width: 10px;
-        height: 120%;
-        top: 0;
-        background: lightblue;
-        position: absolute;
-        left: -44px;
-        visibility: invisible; }
-        @media only screen and (min-width: 768px) {
-          .wrapper .all-entries .entry .side-border {
-            visibility: visible;
-            z-index: 0; } }
-  .wrapper .date-time {
-    margin: 4% 0;
-    border-bottom: 2px solid lightblue;
-    height: 13vh;
-    z-index: 2;
-    padding: 2vh 4vw 4vh; }
     @media only screen and (min-width: 768px) {
-      .wrapper .date-time {
-        display: flex;
-        border-bottom: none;
-        position: absolute;
-        top: -6vh;
-        left: -46vh;
-        width: 30%;
-        height: auto; } }
+      .wrapper .all-entries {
+        margin: 0 7% 3% 30%; } }
     @media only screen and (min-width: 1024px) {
-      .wrapper .date-time {
-        position: absolute;
-        top: -10vh;
-        left: -53vh;
-        height: auto;
-        width: 2vw; } }
-  .wrapper .icon {
-    background: pink;
-    border-radius: 50%;
-    height: 53px;
-    width: 55px;
-    position: relative;
-    top: -11vh;
-    left: 5vw;
-    height: 45px;
-    width: 45px; }
-    @media only screen and (min-width: 768px) {
-      .wrapper .icon {
-        top: 22px;
-        position: absolute;
-        left: 181px; } }
-    @media only screen and (min-width: 1024px) {
-      .wrapper .icon {
-        top: 27px;
-        position: absolute;
-        left: 219px; } }
-    .wrapper .icon .fa {
+      .wrapper .all-entries {
+        margin: 0 2% 3% 19%; } }
+    .wrapper .all-entries .side-border {
+      width: 10px;
+      height: 200%;
+      top: 0;
+      background: #40B2E3;
       position: absolute;
-      color: white;
-      border-radius: 50%;
-      padding: 2%;
-      font-size: 1.25em; }
+      left: -44px;
+      visibility: invisible; }
       @media only screen and (min-width: 768px) {
-        .wrapper .icon .fa {
-          font-size: 1.25em; } }
-    .wrapper .icon .icon-background {
-      color: lightblue;
-      font-size: 54px;
-      top: -5px;
-      left: -1px; }
-    .wrapper .icon .fa-mobile-phone {
-      top: 11px;
-      left: 18px; }
-    .wrapper .icon .fa-desktop {
-      top: 13px;
-      left: 11px; }
+        .wrapper .all-entries .side-border {
+          visibility: visible;
+          z-index: 0; } }
+
+.date-time {
+  margin: 4% 0;
+  border-bottom: 2px solid #40B2E3;
+  height: 13vh;
+  z-index: 2;
+  padding: 2vh 4vw 4vh; }
+  @media only screen and (min-width: 768px) {
+    .date-time {
+      display: flex;
+      border-bottom: none;
+      position: absolute;
+      top: -6vh;
+      left: -46vh;
+      width: 30%;
+      height: auto; } }
+  @media only screen and (min-width: 1024px) {
+    .date-time {
+      position: absolute;
+      top: -10vh;
+      left: -53vh;
+      height: auto;
+      width: 2vw; } }
+
+.icon {
+  background: #3794E6;
+  border-radius: 50%;
+  height: 53px;
+  width: 55px;
+  position: relative;
+  top: -11vh;
+  left: 5vw;
+  height: 45px;
+  width: 45px; }
+  @media only screen and (min-width: 768px) {
+    .icon {
+      top: 22px;
+      position: absolute;
+      left: 181px; } }
+  @media only screen and (min-width: 1024px) {
+    .icon {
+      top: 27px;
+      position: absolute;
+      left: 219px; } }
+  .icon .fa {
+    position: absolute;
+    color: white;
+    border-radius: 50%;
+    padding: 2%;
+    font-size: 1.25em; }
+    @media only screen and (min-width: 768px) {
+      .icon .fa {
+        font-size: 1.25em; } }
+  .icon .icon-background {
+    color: #40B2E3;
+    font-size: 54px;
+    top: -5px;
+    left: -1px; }
+  .icon .fa-mobile-phone {
+    top: 11px;
+    left: 18px; }
+  .icon .fa-desktop {
+    top: 13px;
+    left: 11px; }
 
 li.date {
   font-size: 23px;
@@ -108,7 +114,7 @@ li.date {
 
 li.time {
   font-size: 41px;
-  color: lightblue;
+  color: #40B2E3;
   padding: 0 0 0 41%; }
   @media only screen and (min-width: 768px) {
     li.time {
@@ -123,14 +129,14 @@ li.time {
 
 .text-block {
   border-radius: 1%;
-  background: lightblue;
+  background: #40B2E3;
   color: white;
-  border-top: 2px solid lightblue;
+  border-top: 2px solid #40B2E3;
   padding: 6% 2% 3% 3%;
   font-size: 20px;
   margin-top: 1%; }
   .text-block .triangle {
-    color: lightblue;
+    color: #40B2E3;
     position: absolute;
     visibility: hidden; }
     @media only screen and (min-width: 768px) {
