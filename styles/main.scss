@@ -13,120 +13,122 @@ $medtext: 1.25em;
     background: $textcolorwords;
     width: 100%;
     line-height: 1.5;
+  }
 
     .all-entries {
         display: flex;
         flex-direction: column-reverse;
-        .entry:nth-of-type(odd) {
-          .text-block {
-            background: $background2;
-            .triangle {
-              color: $background2;
-            }
-          }
-        }
-        .entry {
-            position: relative;
-            margin: 8% 1% 3% 2%;
-            }
-            @include tablet {
-                margin: 0 7% 3% 30%;
-            }
-            @include fullscreen {
-                margin: 0 2% 3% 19%;
-            }
 
-            .side-border {
-                width: 10px;
-                height: 200%;
-                top: 0;
-                background: $background1;
-                position: absolute;
-                left: -44px;
-                visibility: invisible;
-                @include tablet {
-                    visibility: visible;
-                    z-index: 0;
+        .entry:nth-of-type(odd) {
+            .text-block {
+                background: $background2;
+
+                .triangle {
+                    color: $background2;
                 }
             }
         }
-    }
 
-    .date-time {
-        margin: 4% 0;
-        border-bottom: 2px solid $background1;
-        height: 13vh;
-        z-index: 2;
-        padding: 2vh 4vw 4vh;
+        .entry {
+            position: relative;
+            margin: 8% 1% 3% 2%;
+        }
         @include tablet {
-            display: flex;
-            border-bottom: none;
-            position: absolute;
-            top: -6vh;
-            left: -46vh;
-            width: 30%;
-            height: auto;
+            margin: 0 7% 3% 30%;
         }
         @include fullscreen {
-            position: absolute;
-            top: -10vh;
-            left: -53vh;
-            height: auto;
-            width: 2vw;
-        }
-    }
-
-    .icon {
-        background: $background2;
-        border-radius: 50%;
-        height: 53px;
-        width: 55px;
-        position: relative;
-        top: -11vh;
-        left: 5vw;
-        height: 45px;
-        width: 45px;
-
-        @include tablet {
-            top: 22px;
-            position: absolute;
-            left: 181px;
-        }
-        @include fullscreen {
-            top: 27px;
-            position: absolute;
-            left: 219px;
+            margin: 0 2% 3% 19%;
         }
 
-        .fa {
+        .side-border {
+            width: 10px;
+            height: 200%;
+            top: 0;
+            background: $background1;
             position: absolute;
-            color: $textcolorwords;
-            border-radius: 50%;
-            padding: 2%;
-            font-size: $medtext;
+            left: -44px;
+            visibility: invisible;
             @include tablet {
-                font-size: $medtext;
+                visibility: visible;
+                z-index: 0;
             }
         }
+    }
 
-        .icon-background {
-            color: $background1;
-            font-size: 54px;
-            top: -5px;
-            left: -1px;
-        }
 
-        .fa-mobile-phone {
-            top: 11px;
-            left: 18px;
-        }
+.date-time {
+    margin: 4% 0;
+    border-bottom: 2px solid $background1;
+    height: 13vh;
+    z-index: 2;
+    padding: 2vh 4vw 4vh;
+    @include tablet {
+        display: flex;
+        border-bottom: none;
+        position: absolute;
+        top: -4vh;
+        left: -31.6vw;
+        width: 30%;
+        height: auto;
+    }
+    @include fullscreen {
+        position: absolute;
+        top: -5vh;
+        left: -19.5vw;
+        height: auto;
+        width: 2vw;
+    }
+}
 
-        .fa-desktop {
-            top: 13px;
-            left: 11px;
+.icon {
+    background: $background2;
+    border-radius: 50%;
+    height: 53px;
+    width: 55px;
+    position: relative;
+    top: -11vh;
+    left: 5vw;
+    height: 45px;
+    width: 45px;
+    @include tablet {
+        top: 22px;
+        position: absolute;
+        left: 181px;
+    }
+    @include fullscreen {
+        top: 27px;
+        position: absolute;
+        left: 219px;
+    }
+
+    .fa {
+        position: absolute;
+        color: $textcolorwords;
+        border-radius: 50%;
+        padding: 2%;
+        font-size: $medtext;
+        @include tablet {
+            font-size: $medtext;
         }
     }
 
+    .icon-background {
+        color: $background1;
+        font-size: 54px;
+        top: -5px;
+        left: -1px;
+    }
+
+    .fa-mobile-phone {
+        top: 11px;
+        left: 18px;
+    }
+
+    .fa-desktop {
+        top: 13px;
+        left: 11px;
+    }
+}
 
 li.date {
     font-size: 23px;
